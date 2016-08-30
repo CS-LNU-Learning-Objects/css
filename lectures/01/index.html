@@ -1,0 +1,583 @@
+﻿<!doctype html>
+<html lang="sv-se">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>01 - Lecture - HTML</title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+
+    <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="../reveal.js/css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="../reveal.js/css/theme/black.lnu.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div class="reveal lnu">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <!-- Start -->
+            <section class="center" data-state="lnu-intro">
+                <h3>Client-based Web Programming</h3>
+                <h3>(1DV022)</h3>
+                <h1>Lecture 02</h1>
+                <div class="lnu-footer">
+                    <img src="../images/lnu-logotype.png" />
+                    <img src="../images/lnu-symbol.png" />
+                </div>
+            </section>
+
+            <!-- CC -->
+            <section data-state="lnu-cc">
+                <h2>Licence for this work</h2>
+                <p>
+                    This work is produced by Johan Leitet for the course Client-based Web Programming (1DV022) at Linnaeus University.
+                </p>
+                <p>All content in this work excluding photographs, icons, picture of course litterature and Linnaeus University logotype and symbol, is licensied under a
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Creative Commons Attribution 4.0 International License</a>.</p>
+                <h4>You are free to </h4>
+                <ul>
+                    <li>copy and redistribute the material in any medium or format</li>
+                    <li>spread the whole or parts of the content</li>
+                    <li>show the whole or parts of the content publicly and digital</li>
+                    <li>convert the content to another format</li>
+                    <li>change the content</li>
+                </ul>
+                <p>
+                    If you change the content do not use the photographs, icons, picture of the course literature or Linnaeus University logotype and symbol in your new work!
+                </p>
+                <p>
+                    At all times you must give credit to: ”Linnaeus university – Client-based Web Programming (1DV022)” with the link https://coursepress.lnu.se/kurs/klientbaserad-webbprogrammering/ and to the Creative Common-license above.
+                </p>
+            </section>
+
+            <!-- Content -->
+            <section data-markdown>
+
+                <script type="text/template">
+                    ## Content
+
+                    - The web as a platform
+
+                     - Från Informationsbärare -> Applikationsplattform
+
+                    - A brief look on protocols
+                    - Markup languages from HTML to HTML5
+
+                    - A HTML-document
+                    - structure
+                    - entities
+                    - charcodes
+                    - comments and indenting
+                    - graphic vs. logical formatting
+                    - overview of tags
+                    - Forms
+
+                </script>
+                <pre><code></code></pre>
+            </section>
+
+        <!-- The Web as an platform -->
+        <section>
+             <!-- Information carry -> Applications -->
+
+             <!-- Client / Server -->
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## Client - Server
+
+                ![](https://docs.google.com/drawings/d/1gOpYx-GdcR38EsMTARK6CuGI_-MbctW4bMOLZFnjHXE/pub?w=1430&h=635)
+
+                </script>
+            </section>
+
+        </section>
+
+        <!-- A breif look on protocols -->
+        <section>
+             <!-- The web != Intnet -->
+
+
+            <section data-background-image="http://99percentinvisible.org/app/uploads/2016/03/roundaboutgif.gif" data-markdown>
+              <script type="text/template">
+              ## The Web != Internet
+              </script>
+            </section>
+             <!-- http / https -->
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## Protocols
+
+
+                |         | TCP/IP model          |   |
+                | ------------- |:-------------:| :-----:|
+                |  IP | Internet layer |  |
+                |  TCP | Transport layer |  |
+                | http ([1.1](https://tools.ietf.org/html/rfc2616) / [2](https://tools.ietf.org/html/rfc7540))| Application layer|     |
+                | TLS / SSL | Application layer | [https](https://tools.ietf.org/html/rfc2818) |
+                | [WebSocket](https://tools.ietf.org/html/rfc6455) | Application layer     |   |
+
+
+                </script>
+            </section>
+
+        </section>
+<!--
+        - Markup languages from HTML to HTML5
+         - Tidsresa
+         - "Word document"
+         - Tidslinje- -!>
+         <!-- Markup languages from HTML to HTML5 -->
+         <section>
+           <section class="noborderimages" data-markdown>
+               <script type="text/template">
+               ## 1993
+               ![](../images/History1993.png)
+
+               </script>
+           </section>
+
+           <section class="noborderimages" data-markdown>
+               <script type="text/template">
+               ## 1994
+               ![](../images/History1994.png)
+
+               </script>
+           </section>
+
+           <section class="noborderimages" data-markdown>
+               <script type="text/template">
+               ## 1996
+               ![](../images/History1996.gif)
+
+               </script>
+           </section>
+
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## 1999
+                ![](../images/History1999.png)
+
+                </script>
+            </section>
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## 2003
+                ![](../images/History1994.png)
+
+                </script>
+            </section>
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## Web page / Web application
+                ![](https://docs.google.com/drawings/d/1lsOJatOf6xhdao51vViN2eEUcycWzKEU8TwYniNPQ84/pub?w=1440&h=1080)
+
+                </script>
+            </section>
+        </section>
+
+        <section>
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## Markup
+                ![](../images/pages.png)
+
+                </script>
+            </section>
+
+         </section>
+
+         <!-- HTML documents -->
+         <section>
+           <section class="noborderimages" data-markdown>
+               <script type="text/template">
+               ## The dawn of HTML5
+               ![](https://docs.google.com/drawings/d/1_w9vJXbvL9iqzUQp46_JiN0Q5yzz41X8hJWU_rrFbV4/pub?w=1428&h=427)
+
+               </script>
+           </section>
+
+
+           <section class="noborderimages" data-markdown>
+               <script type="text/template">
+               ## The foundation
+
+               ```html
+               <!doctype html>
+                 <html lang="sv">
+                  	<head>
+                  	  <meta charset="utf-8" />
+                  	  <title></title>
+                  	</head>
+
+                  	<body>
+
+                  	</body>
+                </html>
+
+               ```
+               </script>
+           </section>
+
+           <section class="noborderimages" data-markdown>
+               <script type="text/template">
+               ## doctype
+
+               ```html
+                 <!doctype html>
+               ```
+
+               * **First** in document
+               * Standard mode / Quirks mode
+               </script>
+           </section>
+
+           <section class="noborderimages" data-markdown>
+               <script type="text/template">
+               ## Hypertext **Markup** Language
+
+               ```html
+                This is some <em class="more">HTML</em> in a document
+               ```
+               Tag
+               ```html
+                <em></em>
+               ```
+               ```html
+                <em> <!-- Start tag -->
+               ```
+               ```html
+                </em> <!-- End tag -->
+               ```
+               Element
+               ```html
+                 <em class="more">HTML</em>
+               ```
+               Attribute
+               ```html
+                 class="more"
+               ```
+               Attribute name
+               ```html
+                 class
+               ```
+               Attribute value
+               ```html
+                 more
+               ```
+               </script>
+           </section>
+
+           <section class="noborderimages" data-markdown>
+                 <script type="text/template">
+                 ## &lt;HTML&gt;
+                 ```html
+                 <!doctype html>
+                   <html lang="en">
+                     <head>
+                       <meta charset="utf-8" />
+                       <title></title>
+                     </head>
+
+                     <body>
+
+                     </body>
+                  </html>
+
+                 ```
+                 * The document
+                 * lang defines the main language of the page
+
+                 </script>
+             </section>
+
+             <section class="noborderimages" data-markdown>
+                   <script type="text/template">
+                   ## &lt;head&gt;
+                   ```html
+                   <!doctype html>
+                     <html lang="en">
+                       <head>
+                         <meta charset="utf-8" />
+                         <title></title>
+                       </head>
+
+                       <body>
+
+                       </body>
+                    </html>
+                   ```
+
+                   Title
+
+                   ![](../images/title.png)
+
+                   Meta charset
+                   * uft-8
+                   * iso-8859-1 (~ win-1252)
+
+                   </script>
+               </section>
+
+               <section class="noborderimages" data-markdown>
+                     <script type="text/template">
+                     ## &lt;body&gt;
+                     ```html
+                     <!doctype html>
+                       <html lang="en">
+                         <head>
+                           <meta charset="utf-8" />
+                           <title></title>
+                         </head>
+
+                         <body>
+
+                         </body>
+                      </html>
+                      ```
+
+                     The content of the webpage
+
+                     </script>
+                 </section>
+
+        </section>
+
+        <section>
+
+
+
+
+
+          <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## Block and inline elements
+                ![](https://docs.google.com/drawings/d/1FK6qWZfkfA_mlpXdVpM25zBD5ewShMuKE3fW5Nsrljk/pub?w=1443&h=425)
+
+                * HTML5 introduces a more complex model, but this one is still applicable
+
+                | Block elements | Inline elements |
+                |----------------|-----------------|
+                |div,p,h1-h6|img|
+
+
+                </script>
+            </section>
+
+
+
+            <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Structure
+                  ![](https://docs.google.com/drawings/d/1qn3pdQ9pHEIA0RYnDWGK7ENu0ql46iRi9sFXQHLxn_I/pub?w=826&h=743)
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                    <script type="text/template">
+                    ## Classic HTML
+                    ![](https://docs.google.com/drawings/d/1JYkpLGzPEuiLxHuvoXHLDWCJvkdFjglRqVB6Ou4YkYc/pub?w=826&h=743)
+                    </script>
+                </section>
+                <section class="noborderimages" data-markdown>
+                      <script type="text/template">
+                      ## HTML5
+                      ![](https://docs.google.com/drawings/d/1t8zL9QxrjwgodiskpaqDbB1bpGDs3Uq-fvENoT5qdyw/pub?w=826&h=743)
+                      </script>
+                  </section>
+
+
+                  <section class="noborderimages" data-markdown>
+                        <script type="text/template">
+                        ## Structure
+                        ```html
+                            <body>
+                              <header></header>
+                              <nav></nav>
+                              <main>
+                                <article></article>
+                                <article></article>
+                                <article></article>
+                              </main>
+                              <aside>
+                                <section></section>
+                                <section></section>
+                              </aside>
+                            </body>
+                        ```
+
+                        - [See example "HTML5 Template"](example/html5-template.html)
+                        - [See example "HTML5 Template - Filled"](example/html5-template-filled.html)
+
+                        </script>
+                  </section>
+
+                  <section class="noborderimages" data-markdown>
+                        <script type="text/template">
+                        ## Validation
+
+                        * Good practice
+                        * [https://validator.w3.org/](https://validator.w3.org/ )
+
+                        </script>
+                    </section>
+
+                  <section class="noborderimages" data-markdown>
+                        <script type="text/template">
+                        ## Block and inline elements
+
+                        | Block elements | Inline elements |
+                        |----------------|-----------------|
+                        |div|img|
+                        |p|a|
+                        |h1-h6|em, strong|
+                        |ul, ol, li|b,i|
+                        |header, hgroup|...|
+                        |footer|
+                        |main, aside, nav||
+                        |section, article|
+                        |details, menu|
+                        |...|
+                        </script>
+                    </section>
+        </section>
+
+        <section>
+          <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## URL
+                A URL (Uniform Resource Locator) is a webpage address on internet.
+
+                Var PUBLICERA?
+                ```
+                https://
+                ```
+                </script>
+            </section>
+            
+          <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## Indenting your code
+                ```html
+                  ••<div>
+                  ••••<ul>
+                  ••••••<li>First in list</li>
+                  ••••••<li>Second in list</li>
+                  ••••</ul>
+                  ••••<p>
+                  ••••••This is a paragraph of text with something <em>important</em>
+                  ••••</p>
+                  ••••<p> Another paragraph of text...</p>
+                  ••</div>
+                 ```
+
+                 ```html
+                   -><div>
+                   ->-><ul>
+                   ->->-><li>First in list</li>
+                   ->->-><li>Second in list</li>
+                   ->-></ul>
+                   ->-><p>
+                   ->->->This is a paragraph of text with something <em>important</em>
+                   ->-></p>
+                   ->-><p> Another paragraph of text...</p>
+                   -></div>
+                  ```
+                </script>
+            </section>
+
+          <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## HTML entities
+
+
+                </script>
+          </section>
+
+          <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## HTML comments
+
+                ```html
+                <!-- This is a comment in HTML. It can be
+                     multiline. Remember! Anyone can read this
+                     comment!!! -->
+                ```
+                </script>
+          </section>
+
+          <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## References
+
+                * [Mozilla Developer network](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML)
+                * [Mozilla Developer network - HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+                * [W3C HTML5 reference for authors](https://dev.w3.org/html5/html-author/)
+                * [HTML5 Rocks](http://www.html5rocks.com/en/)
+                * ~~w3schools.org~~
+
+
+                </script>
+          </section>
+
+
+        </section>
+        </div>
+    </div>
+
+    <script src="../reveal.js/lib/js/head.min.js"></script>
+    <script src="../reveal.js/js/reveal.js"></script>
+
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            width: 1280,
+            height: 800,
+            controls: true,
+            progress: true,
+            history: true,
+            center: false,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+                { src: '../reveal.js/lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: '../reveal.js/plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '../reveal.js/plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: '../reveal.js/plugin/highlight/highlight.js', async: true, condition: function () { return !!document.querySelector('pre code'); }, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+                { src: '../reveal.js/plugin/notes/notes.js', async: true }
+            ]
+        });
+
+    </script>
+
+</body>
+</html>
