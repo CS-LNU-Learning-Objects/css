@@ -28,7 +28,6 @@ See [MDN, CSS  reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Refer
 
 ## Resources
 - [HTML-presentation](https://raw.githubusercontent.com/CS-LNU-Learning-Objects/css/master/lectures/01/index.html)
-
 - [Recording](#) 2016-09-31, 10:15-12:00 (Youtube)
 
 
