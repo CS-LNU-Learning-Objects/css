@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>01 - Lecture - HTML</title>
+    <title>Lecture - CSS</title>
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -43,9 +43,9 @@
         <div class="slides">
             <!-- Start -->
             <section class="center" data-state="lnu-intro">
-                <h3>Client-based Web Programming</h3>
-                <h3>(1DV022)</h3>
-                <h1>Lecture 02</h1>
+                <h3>Introduction to web programming</h3>
+                <h3>(1DV525)</h3>
+                <h1>CSS</h1>
                 <div class="lnu-footer">
                     <img src="../images/lnu-logotype.png" />
                     <img src="../images/lnu-symbol.png" />
@@ -56,7 +56,7 @@
             <section data-state="lnu-cc">
                 <h2>Licence for this work</h2>
                 <p>
-                    This work is produced by Johan Leitet for the course Client-based Web Programming (1DV022) at Linnaeus University.
+                    This work is produced by Johan Leitet for the course Introduction to web programming (1DV525) at Linnaeus University.
                 </p>
                 <p>All content in this work excluding photographs, icons, picture of course litterature and Linnaeus University logotype and symbol, is licensied under a
                 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Creative Commons Attribution 4.0 International License</a>.</p>
@@ -72,7 +72,7 @@
                     If you change the content do not use the photographs, icons, picture of the course literature or Linnaeus University logotype and symbol in your new work!
                 </p>
                 <p>
-                    At all times you must give credit to: ”Linnaeus university – Client-based Web Programming (1DV022)” with the link https://coursepress.lnu.se/kurs/klientbaserad-webbprogrammering/ and to the Creative Common-license above.
+                    At all times you must give credit to: ”Linnaeus university – Introduction to Web Programming (1DV525)” with the link https://coursepress.lnu.se/kurs/introduction-to-web-programming/ and to the Creative Common-license above.
                 </p>
             </section>
 
@@ -109,444 +109,540 @@
              <!-- Client / Server -->
             <section class="noborderimages" data-markdown>
                 <script type="text/template">
-                ## Client - Server
+                ## From this...
 
-                ![](https://docs.google.com/drawings/d/1gOpYx-GdcR38EsMTARK6CuGI_-MbctW4bMOLZFnjHXE/pub?w=1430&h=635)
+                ![](../images/unstyled.png)
+
+                </script>
+            </section>
+
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## ...to this!
+
+                ![](../images/styled.png)
 
                 </script>
             </section>
 
         </section>
 
-        <!-- A breif look on protocols -->
+        <!-- Styles on our page -->
         <section>
-             <!-- The web != Intnet -->
-
-
-            <section data-background-image="http://99percentinvisible.org/app/uploads/2016/03/roundaboutgif.gif" data-markdown>
-              <script type="text/template">
-              ## The Web != Internet
-              </script>
-            </section>
-             <!-- http / https -->
-            <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## Protocols
-
-
-                |         | TCP/IP model          |   |
-                | ------------- |:-------------:| :-----:|
-                |  IP | Internet layer |  |
-                |  TCP | Transport layer |  |
-                | http ([1.1](https://tools.ietf.org/html/rfc2616) / [2](https://tools.ietf.org/html/rfc7540))| Application layer|     |
-                | TLS / SSL | Application layer | [https](https://tools.ietf.org/html/rfc2818) |
-                | [WebSocket](https://tools.ietf.org/html/rfc6455) | Application layer     |   |
-
-
-                </script>
-            </section>
-
-        </section>
-<!--
-        - Markup languages from HTML to HTML5
-         - Tidsresa
-         - "Word document"
-         - Tidslinje- -!>
-         <!-- Markup languages from HTML to HTML5 -->
-         <section>
-           <section class="noborderimages" data-markdown>
-               <script type="text/template">
-               ## 1993
-               ![](../images/History1993.png)
-
-               </script>
-           </section>
-
-           <section class="noborderimages" data-markdown>
-               <script type="text/template">
-               ## 1994
-               ![](../images/History1994.png)
-
-               </script>
-           </section>
-
-           <section class="noborderimages" data-markdown>
-               <script type="text/template">
-               ## 1996
-               ![](../images/History1996.gif)
-
-               </script>
-           </section>
-
-            <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## 1999
-                ![](../images/History1999.png)
-
-                </script>
-            </section>
-            <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## 2003
-                ![](../images/History1994.png)
-
-                </script>
-            </section>
-            <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## Web page / Web application
-                ![](https://docs.google.com/drawings/d/1lsOJatOf6xhdao51vViN2eEUcycWzKEU8TwYniNPQ84/pub?w=1440&h=1080)
-
-                </script>
-            </section>
-        </section>
-
-        <section>
-            <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## Markup
-                ![](../images/pages.png)
-
-                </script>
-            </section>
-
-         </section>
-
-         <!-- HTML documents -->
-         <section>
-           <section class="noborderimages" data-markdown>
-               <script type="text/template">
-               ## The dawn of HTML5
-               ![](https://docs.google.com/drawings/d/1_w9vJXbvL9iqzUQp46_JiN0Q5yzz41X8hJWU_rrFbV4/pub?w=1428&h=427)
-
-               </script>
-           </section>
-
-
-           <section class="noborderimages" data-markdown>
-               <script type="text/template">
-               ## The foundation
-
-               ```html
-               <!doctype html>
-                 <html lang="sv">
-                  	<head>
-                  	  <meta charset="utf-8" />
-                  	  <title></title>
-                  	</head>
-
-                  	<body>
-
-                  	</body>
-                </html>
-
-               ```
-               </script>
-           </section>
-
-           <section class="noborderimages" data-markdown>
-               <script type="text/template">
-               ## doctype
-
-               ```html
-                 <!doctype html>
-               ```
-
-               * **First** in document
-               * Standard mode / Quirks mode
-               </script>
-           </section>
-
-           <section class="noborderimages" data-markdown>
-               <script type="text/template">
-               ## Hypertext **Markup** Language
-
-               ```html
-                This is some <em class="more">HTML</em> in a document
-               ```
-               Tag
-               ```html
-                <em></em>
-               ```
-               ```html
-                <em> <!-- Start tag -->
-               ```
-               ```html
-                </em> <!-- End tag -->
-               ```
-               Element
-               ```html
-                 <em class="more">HTML</em>
-               ```
-               Attribute
-               ```html
-                 class="more"
-               ```
-               Attribute name
-               ```html
-                 class
-               ```
-               Attribute value
-               ```html
-                 more
-               ```
-               </script>
-           </section>
-
-           <section class="noborderimages" data-markdown>
+             <!-- Styles on our page -->
+             <section class="noborderimages" data-markdown>
                  <script type="text/template">
-                 ## &lt;HTML&gt;
-                 ```html
-                 <!doctype html>
-                   <html lang="en">
-                     <head>
-                       <meta charset="utf-8" />
-                       <title></title>
-                     </head>
+                 ## Styles on our pages
 
-                     <body>
-
-                     </body>
-                  </html>
-
-                 ```
-                 * The document
-                 * lang defines the main language of the page
+                 * Built in stylesheet (The Browser)
+                 * User specific settings
+                 * Developer stylesheets
+                   * Inline stylesheets
+                   * Embedded stylesheets
+                   * External stylesheets
 
                  </script>
              </section>
 
              <section class="noborderimages" data-markdown>
-                   <script type="text/template">
-                   ## &lt;head&gt;
-                   ```html
-                   <!doctype html>
-                     <html lang="en">
-                       <head>
-                         <meta charset="utf-8" />
-                         <title></title>
-                       </head>
+                 <script type="text/template">
+                 ## Adding stylesheets
+                 Inline stylesheets
+                 ```HTML
+                 <p style="color:#6C9; text-align:center">
+                   Centered, blueish
+                 </p>
+                 ```
+                 Embedded stylesheets
+                 ```HTML
+                 <head>
+                   ...
+                   <style type="text/css">
+                     p { color: red; }
+                   </style>
+                   ...
+                 </head>
+                 ```
+                 External stylesheets
+                 ```HTML
+                 <head>
+                   ...
+                   <title>Page with style</title>
+                   <link rel="stylesheet" href="mystyle.css" />
+                   ...
+                 </head>
+                 ```
+                 </script>
+             </section>
 
-                       <body>
+         </section>
 
-                       </body>
-                    </html>
-                   ```
+         <!-- Syntax -->
+         <section>
 
-                   Title
-
-                   ![](../images/title.png)
-
-                   Meta charset
-                   * uft-8
-                   * iso-8859-1 (~ win-1252)
-
-                   </script>
-               </section>
-
-               <section class="noborderimages" data-markdown>
-                     <script type="text/template">
-                     ## &lt;body&gt;
-                     ```html
-                     <!doctype html>
-                       <html lang="en">
-                         <head>
-                           <meta charset="utf-8" />
-                           <title></title>
-                         </head>
-
-                         <body>
-
-                         </body>
-                      </html>
-                      ```
-
-                     The content of the webpage
-
-                     </script>
-                 </section>
-
-        </section>
-
-        <section>
-
-
-
-
-
-          <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## Block and inline elements
-                ![](https://docs.google.com/drawings/d/1FK6qWZfkfA_mlpXdVpM25zBD5ewShMuKE3fW5Nsrljk/pub?w=1443&h=425)
-
-                * HTML5 introduces a more complex model, but this one is still applicable
-
-                | Block elements | Inline elements |
-                |----------------|-----------------|
-                |div,p,h1-h6|img|
-
-
-                </script>
-            </section>
-
-
-
-            <section class="noborderimages" data-markdown>
+              <section class="noborderimages" data-markdown>
                   <script type="text/template">
-                  ## Structure
-                  ![](https://docs.google.com/drawings/d/1qn3pdQ9pHEIA0RYnDWGK7ENu0ql46iRi9sFXQHLxn_I/pub?w=826&h=743)
+                  ## Syntax
+
+                  CSS Rules
+                  ```css
+                  selector { property: value; }
+
+                  selector {
+                    property: value;
+                    property: value;
+                    property: value;
+                  }
+
+                  ```
+                  Example
+                  ```css
+                  h1 {
+                    color: #CDF;
+                    background-color: #9FF;
+                  }
+                  ```
+                  _Get all **h1**-element and change the **color** to #CDF and **background-color** to #9FF_
                   </script>
               </section>
 
               <section class="noborderimages" data-markdown>
-                    <script type="text/template">
-                    ## Classic HTML
-                    ![](https://docs.google.com/drawings/d/1JYkpLGzPEuiLxHuvoXHLDWCJvkdFjglRqVB6Ou4YkYc/pub?w=826&h=743)
-                    </script>
-                </section>
-                <section class="noborderimages" data-markdown>
-                      <script type="text/template">
-                      ## HTML5
-                      ![](https://docs.google.com/drawings/d/1t8zL9QxrjwgodiskpaqDbB1bpGDs3Uq-fvENoT5qdyw/pub?w=826&h=743)
-                      </script>
-                  </section>
+                  <script type="text/template">
+                  ## Selectors
+
+                  CSS Rules
+                  ```css
+                  selector {
+                    property: value;
+                    property: value;
+                    property: value;
+                  }
+                  ```
+
+                  * tag selector (type selector)
+                  * class selector
+                  * id selector
+                  * attribute selectors
+                  * pseudo-classes selectors
+
+                  https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Tag selectors (type selectors)
+
+                  Single selector
+                  ```css
+                  h1 { property: value; }
+                  ```
+
+                  An em element that is a descendant of an h1 element
+                  ```css
+                  h1 em { property: value; }
+                  ```
+
+                  Example:
+                  ```css
+                  p em strong { property: value; }
+                  ```
+
+                  ```html
+                   <p>
+                     This is an <em><strong>example</strong></em>.
+                     Another <strong>text</strong>.
+                   </p>
+                  ```
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Class selectors
+
+                  Single selector
+                  ```css
+                  .avatar { property: value; }
+                  ```
+
+                  ```html
+                   <p class="avatar"> Selected </p>
+                   ...
+                   <p class="avatar"> Selected </p>
+                   ...
+                   <div class="active avatar"> Selected </div>
+                   ...
+                   <p> Not selected </p>
+                  ```
+
+                  Combined selector
+                  ```css
+                  p.avatar { property: value; }
+                  ```
+
+                  ```html
+                   <p class="avatar"> Selected </p>
+                   ...
+                   <p class="avatar"> Selected </p>
+                   ...
+                   <div class="active avatar"> Not selected </div>
+                   ...
+                   <p> Not selected </p>
+                  ```
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## ID selectors
+
+                  Single selector
+                  ```css
+                  #content { property: value; }
+                  ```
+
+                  ```html
+                   <div id="content">
+                     Selected
+                   </div>
+
+                   <div>
+                     Not selected
+                   </div>
+                  ```
+
+                  Important: The ID value (above "content") must be unique on the page!
 
 
-                  <section class="noborderimages" data-markdown>
-                        <script type="text/template">
-                        ## Structure
-                        ```html
-                            <body>
-                              <header></header>
-                              <nav></nav>
-                              <main>
-                                <article></article>
-                                <article></article>
-                                <article></article>
-                              </main>
-                              <aside>
-                                <section></section>
-                                <section></section>
-                              </aside>
-                            </body>
-                        ```
+                  </script>
+              </section>
 
-                        - [See example "HTML5 Template"](example/html5-template.html)
-                        - [See example "HTML5 Template - Filled"](example/html5-template-filled.html)
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Attribute selectors
 
-                        </script>
-                  </section>
+                  All elements with the attribute disabled
+                  ```css
+                  [disabled] { propery: value; }
+                  ```
+                  All <input type="button" value="&lt;input type='button' /&gt;" />
+                  ```css
+                  [type='button'] { propery: value; }
+                  ```
+                  All secure links
+                  ```css
+                  a[href^="https://"] {propery: value;}]
+                  ```
+                  All .png-images
+                  ```css
+                  img[src$=".png"] {propery: value;}]
+                  ```
+                  ...
+                  </script>
+              </section>
 
-                  <section class="noborderimages" data-markdown>
-                        <script type="text/template">
-                        ## Validation
 
-                        * Good practice
-                        * [https://validator.w3.org/](https://validator.w3.org/ )
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Relationship selectors
 
-                        </script>
-                    </section>
 
-                  <section class="noborderimages" data-markdown>
-                        <script type="text/template">
-                        ## Block and inline elements
+                  |Selector|Selects|
+                  |--------|-------|
+                  |A  E| E that is decendant of A|
+                  |A > E|E that is a child of A|
+                  |E:first-child| E that is first child|
+                  |B + E| E that is next sibling of B|
+                  </script>
+              </section>
 
-                        | Block elements | Inline elements |
-                        |----------------|-----------------|
-                        |div|img|
-                        |p|a|
-                        |h1-h6|em, strong|
-                        |ul, ol, li|b,i|
-                        |header, hgroup|...|
-                        |footer|
-                        |main, aside, nav||
-                        |section, article|
-                        |details, menu|
-                        |...|
-                        </script>
-                    </section>
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Grouping selectors
+
+                  ```css
+                  h1,h2,h3 { propery: value; }
+                  ```
+
+                  ```css
+                  p.red strong.hidden, #content p:first-line { propery: value; }
+                  ```
+
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Pseudo class selectors
+
+                  Hovering links
+                  ```css
+                  a:link { propery: value; }
+                  a:visited { propery: value; }
+                  a:focus { propery: value; }
+                  a:hover { propery: value; }
+                  a:active { propery: value; }
+                  ```
+                  Example
+                  ```css
+                  div p:first-child {propery: value;}
+                  ```
+
+                  ```html
+                   <div>
+                     <p>I am first child</p>
+                     <ul>
+                       <li>I am first child as well!</li>
+                       <li>Poor me... :(</li>
+                     </ul>
+                     <p>And me...</p>
+                   </div>
+                  ```
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Specificity
+                  Different selectors have higher specificity than others.
+
+                  ```css
+                  p#firstptag {color: yellow; } /* 101 */
+
+                  p.content {color: green; }    /* 11 */
+
+                  p {color: red; }              /* 1 */
+
+                  p {color: blue; }             /* 1 + last */
+
+                  ```
+
+                </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Propery inheritance
+
+                  Some properties are inheritanced by decendents
+                  ```css
+                  p { color: red; }
+                  ```
+
+                  ```html
+                   <p>
+                     This text will be red. <em>This text as well!</em>
+                   </p>
+                  ```
+
+                  Not all properties are inherited. Refer to the spec.
+
+
+                  </script>
+              </section>
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Reference for HTML and CSS
+
+                  ![](../images/mdn.png)
+                  https://developer.mozilla.org
+                  </script>
+              </section>
         </section>
 
         <section>
-          <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## URL
-                A URL (Uniform Resource Locator) is a webpage address on internet.
 
-                Var PUBLICERA?
-                ```
-                https://
-                ```
-                </script>
-            </section>
-            
-          <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## Indenting your code
-                ```html
-                  ••<div>
-                  ••••<ul>
-                  ••••••<li>First in list</li>
-                  ••••••<li>Second in list</li>
-                  ••••</ul>
-                  ••••<p>
-                  ••••••This is a paragraph of text with something <em>important</em>
-                  ••••</p>
-                  ••••<p> Another paragraph of text...</p>
-                  ••</div>
-                 ```
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Readable CSS
 
-                 ```html
-                   -><div>
-                   ->-><ul>
-                   ->->-><li>First in list</li>
-                   ->->-><li>Second in list</li>
-                   ->-></ul>
-                   ->-><p>
-                   ->->->This is a paragraph of text with something <em>important</em>
-                   ->-></p>
-                   ->-><p> Another paragraph of text...</p>
-                   -></div>
+                  ```css
+                  #content p { font-size: 1.1em; color: #4D83A4; margin-left: 10px; }
                   ```
+
+                  ```css
+                  #content {
+                    float: left;
+                    font-size: 1.6em;
+                  }
+                    #content p {
+                      color: #4D83A4;
+                      font-size: 1.1em;
+                    }
+                       #content p:first-letter {
+                          font-size: 1.7em;
+                       }
+                  ```
+
+                  ```css
+                  #content
+                  {
+                    font-size   : 1.6em;
+                    float       : left;
+                    margin-right: left;
+                  }
+
+                  ```
+
+                  https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Readable_CSS
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Comments
+
+                  Multiline comments
+                  ```css
+                  /*  Layout
+                      Using: Two column floating layout
+                      Total width: 250px
+                  */
+                  ```
+
+                  No single line // available
+
+                  </script>
+              </section>
+
+              <section class="noborderimages" data-markdown>
+                  <script type="text/template">
+                  ## Order matters
+
+
+                  ```html
+                  <head>
+                    ...
+                    <link rel="stylesheet" href="reset.css" />
+
+                    <link rel="stylesheet" href="main.css" />
+                  </head>
+                  ```
+
+                  </script>
+              </section>
+
+          </section>
+
+          <section>
+            <section class="noborderimages" data-markdown>
+                <script type="text/template">
+                ## Properties
+
+                | |||
+                |----|----|---|
+                |Fonts and text| _Sizes, margins, fontfaces_|
+                |Graphics|_Colors, borders, shadows, effects, backgrounds_|
+                |Layout|_Boxes, positioning, layout models_|
+                |Animations|_Transformations, transitions_|
+
+
                 </script>
             </section>
 
-          <section class="noborderimages" data-markdown>
+
+            <section class="noborderimages" data-markdown>
                 <script type="text/template">
-                ## HTML entities
-
-
-                </script>
-          </section>
-
-          <section class="noborderimages" data-markdown>
-                <script type="text/template">
-                ## HTML comments
+                ## Media Queries
+                Responsive page?
 
                 ```html
-                <!-- This is a comment in HTML. It can be
-                     multiline. Remember! Anyone can read this
-                     comment!!! -->
+                <!-- CSS media query on a link element -->
+                <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+
+                <!-- CSS media query within a stylesheet -->
+                <style>
+                @media (max-width: 600px) {
+                  .facet_sidebar {
+                    display: none;
+                  }
+                }
+                </style>
                 ```
+
+                ```css
+                @media tv and (min-width: 700px) and (orientation: landscape) { ...  }
+                ```
+                https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
                 </script>
+            </section>
+
+
           </section>
 
-          <section class="noborderimages" data-markdown>
+          <!-- CSS Preprocessors -->
+          <section>
+            <!-- What is? -->
+            <section data-markdown>
+              <script type="text/template">
+              ## CSS Frameworks
+                A CSS Framework will give you a<br>
+                solid foundation to build your<br>
+                site upon. But beware, you do<br>
+                not want to end up with yet<br>
+                another Bootstrap-site.
+
+
+                * [Bootstrap](http://getbootstrap.com/)
+                * [Semantic UI](http://semantic-ui.com/)
+                * [Foundation](http://foundation.zurb.com/)
+                * [Material Framework](http://nt1m.github.io/material-framework/)
+                * [Materialize](http://materializecss.com/)
+              </script>
+            </section>
+
+          </section>
+
+          <!-- CSS Preprocessors -->
+          <section>
+            <!-- What is? -->
+            <section>
+                <h2>CSS Preprocessors</h2>
+                A CSS Preprocessor is a set of rules<br>
+                that lets you extend the css-language<br>
+                with some usable parts. The extended <br>
+                css is transformed to regular css using <br>
+                the preprocessor.
+
+            </section>
+
+            <!-- Why? -->
+            <section data-markdown>
                 <script type="text/template">
-                ## References
+                    ## Why use CSS Preprocessors?
+                    * Less css to maintain
+                    * DRY css
+                    * Make calculations in your css
+                    * Better organized css
+                     * Nesting
+                     * Separate in files
+                     * Use mixins
+                    * Use variables!
 
-                * [Mozilla Developer network](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML)
-                * [Mozilla Developer network - HTML element reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-                * [W3C HTML5 reference for authors](https://dev.w3.org/html5/html-author/)
-                * [HTML5 Rocks](http://www.html5rocks.com/en/)
-                * ~~w3schools.org~~
+                </script>
+                <pre><code></code></pre>
+            </section>
+            <!-- Which? -->
+            <section data-markdown>
+                <script type="text/template">
+                    ## Which?
+
+                    * [sass](http://sass-lang.com)
+                    * [less](http://lesscss.org)
+                    * [stylus](https://learnboost.github.io/stylus/)
+
+                    <br><br>
+                    If you have worked with CSS before we encourage<br>
+                    you to try a preprocessor in the first assignment.
 
 
                 </script>
+
+            </section>
+
           </section>
 
-
-        </section>
         </div>
     </div>
 
