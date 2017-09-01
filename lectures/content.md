@@ -28,7 +28,8 @@ See [MDN, CSS  reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Refer
 
 ## Resources
 - [HTML-presentation](https://rawgit.com/CS-LNU-Learning-Objects/css/master/lectures/01/index.html)
-- [Recording](https://youtu.be/IJsu_KFYFLo) 2016-09-31, 10:15-12:00 (Youtube)
+- [Recording](https://youtu.be/IB5HnFzTiSQ) 2017-08-30, 13:15-15:00 (Youtube)
+- [Recording](https://youtu.be/IJsu_KFYFLo) 2016-08-31, 13:15-15:00 (Youtube)
 
 
 ### MDN
